@@ -1,32 +1,31 @@
 {
-  "name": "angular-async-local-storage",
-  "version": "1.3.1",
-  "description": "Efficient local storage module for Angular : simple API based on native localStorage API, but internally stored via the asynchronous IndexedDB API for performance, and wrapped in RxJS observables to be homogeneous with other Angular modules.",
-  "main": "bundles/async-local-storage.umd.js",
+  "name": "angular-module-starter",
+  "version": "1.0.0",
+  "description": "Angular Module Starter",
+  "main": "bundles/angular-module-starter.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
   "scripts": {},
   "keywords": [
-    "angular",
-    "angular2",
-    "angular 2",
-    "localstorage",
-    "local storage"
+    "angular"
   ],
-  "author": "Cyrille Tuzi",
+  "author": "Bram Borggreve",
+  "contributors": [
+    "Cyrille Tuzi (https://github.com/cyrilletuzi/angular-async-local-storage)"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cyrilletuzi/angular-async-local-storage.git"
+    "url": "https://github.com/beeman/angular-module-starter.git"
   },
-  "homepage": "https://github.com/cyrilletuzi/angular-async-local-storage",
+  "homepage": "https://github.com/beeman/angular-module-starter",
   "bugs": {
-    "url": "https://github.com/cyrilletuzi/angular-async-local-storage/issues"
+    "url": "https://github.com/beeman/angular-module-starter/issues"
   },
   "peerDependencies": {
     "@angular/core": "^2.4.0",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.1",
+    "rxjs": "^5.0.3",
     "zone.js": "^0.7.2"
   }
 }

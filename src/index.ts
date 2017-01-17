@@ -1,2 +1,2 @@
-export { AsyncLocalStorageModule } from './async-local-storage_module';
-export { AsyncLocalStorage }       from './async-local-storage';
+export { AngularModuleStarterModule } from './angular-module-starter.module';
+export { AngularModuleStarterService } from './angular-module-starter.service';

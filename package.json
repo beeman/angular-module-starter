@@ -1,37 +1,37 @@
 {
-  "name": "angular-async-local-storage",
-  "version": "1.3.1",
-  "description": "Efficient local storage module for Angular : simple API based on native localStorage API, but internally stored via the asynchronous IndexedDB API for performance, and wrapped in RxJS observables to be homogeneous with other Angular modules.",
-  "main": "dist/bundles/async-local-storage.umd.js",
+  "name": "angular-module-starter",
+  "version": "1.0.0",
+  "description": "Angular Module Starter",
+  "main": "dist/bundles/angular-module-starter.umd.js",
   "module": "dist/index.js",
   "scripts": {
-    "cleanup": "rimraf dist/bundles dist/src dist/index.d.ts dist/index.js dist/index.js.map dist/LICENCE dist/README.md",
+    "cleanup": "rimraf dist/bundles dist/src dist/index.d.ts dist/index.metadata.json dist/index.js dist/index.js.map dist/LICENSE dist/README.md",
     "bundling": "rollup -c",
-    "minify": "uglifyjs dist/bundles/async-local-storage.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/async-local-storage.umd.min.js",
+    "minify": "uglifyjs dist/bundles/angular-module-starter.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angular-module-starter.umd.min.js",
     "copy": "copyfiles LICENSE README.md dist",
-    "build": "npm run cleanup && ngc && npm run bundling && npm run minify && npm run copy"
+    "build": "npm run cleanup && ngc && npm run bundling && npm run minify && npm run copy",
+    "publish-to-npm": "cd dist && npm publish"
   },
   "keywords": [
-    "angular",
-    "angular2",
-    "angular 2",
-    "localstorage",
-    "local storage"
+    "angular"
   ],
-  "author": "Cyrille Tuzi",
+  "author": "Bram Borggreve",
+  "contributors": [
+    "Cyrille Tuzi (https://github.com/cyrilletuzi/angular-async-local-storage)"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cyrilletuzi/angular-async-local-storage.git"
+    "url": "https://github.com/beeman/angular-module-starter.git"
   },
-  "homepage": "https://github.com/cyrilletuzi/angular-async-local-storage",
+  "homepage": "https://github.com/beeman/angular-module-starter",
   "bugs": {
-    "url": "https://github.com/cyrilletuzi/angular-async-local-storage/issues"
+    "url": "https://github.com/beeman/angular-module-starter/issues"
   },
   "dependencies": {
     "@angular/core": "^2.4.0",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.1",
+    "rxjs": "^5.0.3",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
